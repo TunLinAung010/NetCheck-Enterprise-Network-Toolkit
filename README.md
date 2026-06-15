@@ -6,29 +6,26 @@ A lightweight, cross-platform network diagnostics tool that combines **ping**, *
 
 ### Linux
 ```bash
-# Option A: Build from source
-git clone https://github.com/netcheck/netcheck.git
-cd netcheck
+# Build from source
+git clone https://github.com/TunLinAung010/NetCheck-Enterprise-Network-Toolkit.git
+cd NetCheck-Enterprise-Network-Toolkit
 go build -o netcheck ./cmd/netcheck
 sudo mv netcheck /usr/local/bin/
 sudo setcap cap_net_raw+ep /usr/local/bin/netcheck  # non-root ICMP ping
-
-# Option B: Download release
-curl -L https://github.com/netcheck/netcheck/releases/latest/download/netcheck-linux-amd64 -o netcheck
-chmod +x netcheck && sudo mv netcheck /usr/local/bin/
 ```
 
 ### macOS
 ```bash
-curl -L https://github.com/netcheck/netcheck/releases/latest/download/netcheck-darwin-amd64 -o netcheck
-chmod +x netcheck && sudo mv netcheck /usr/local/bin/
+git clone https://github.com/TunLinAung010/NetCheck-Enterprise-Network-Toolkit.git
+cd NetCheck-Enterprise-Network-Toolkit
+go build -o netcheck ./cmd/netcheck
+sudo mv netcheck /usr/local/bin/
 ```
 
 ### Windows (PowerShell)
 ```powershell
-Invoke-WebRequest -Uri https://github.com/netcheck/netcheck/releases/latest/download/netcheck-windows-amd64.exe -OutFile netcheck.exe
-# or build:
-cd D:\Pilot-Projects\OpenCode\NetCheck-Enterprise-Network-Toolkit
+git clone https://github.com/TunLinAung010/NetCheck-Enterprise-Network-Toolkit.git
+cd NetCheck-Enterprise-Network-Toolkit
 $env:CGO_ENABLED="0"; go build -o netcheck.exe ./cmd/netcheck
 ```
 
@@ -139,3 +136,7 @@ rtt min/avg/max = 11.3ms/11.9ms/12.5ms
 ## License
 
 MIT
+
+---
+
+**[GitHub Repository](https://github.com/TunLinAung010/NetCheck-Enterprise-Network-Toolkit)**

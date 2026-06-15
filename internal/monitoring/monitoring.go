@@ -6,10 +6,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/netcheck/netcheck/internal/httpcheck"
-	"github.com/netcheck/netcheck/internal/ping"
-	"github.com/netcheck/netcheck/internal/tcp"
-	"github.com/netcheck/netcheck/internal/tlscheck"
+	"github.com/TunLinAung010/NetCheck-Enterprise-Network-Toolkit/internal/httpcheck"
+	"github.com/TunLinAung010/NetCheck-Enterprise-Network-Toolkit/internal/ping"
+	"github.com/TunLinAung010/NetCheck-Enterprise-Network-Toolkit/internal/tcp"
+	"github.com/TunLinAung010/NetCheck-Enterprise-Network-Toolkit/internal/tlscheck"
 )
 
 type MonitorType string

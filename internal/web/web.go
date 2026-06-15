@@ -10,12 +10,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/netcheck/netcheck/internal/httpcheck"
-	"github.com/netcheck/netcheck/internal/ping"
-	"github.com/netcheck/netcheck/internal/tcp"
-	"github.com/netcheck/netcheck/internal/tlscheck"
-	"github.com/netcheck/netcheck/internal/traceroute"
-	"github.com/netcheck/netcheck/pkg/logger"
+	"github.com/TunLinAung010/NetCheck-Enterprise-Network-Toolkit/internal/httpcheck"
+	"github.com/TunLinAung010/NetCheck-Enterprise-Network-Toolkit/internal/ping"
+	"github.com/TunLinAung010/NetCheck-Enterprise-Network-Toolkit/internal/tcp"
+	"github.com/TunLinAung010/NetCheck-Enterprise-Network-Toolkit/internal/tlscheck"
+	"github.com/TunLinAung010/NetCheck-Enterprise-Network-Toolkit/internal/traceroute"
+	"github.com/TunLinAung010/NetCheck-Enterprise-Network-Toolkit/pkg/logger"
 )
 
 type Dashboard struct {

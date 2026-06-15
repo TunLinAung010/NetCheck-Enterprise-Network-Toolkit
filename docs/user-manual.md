@@ -29,26 +29,26 @@ NetCheck is an enterprise-grade network troubleshooting toolkit that combines th
 
 ### Linux
 ```bash
-curl -L https://github.com/netcheck/netcheck/releases/latest/download/netcheck-linux-amd64 -o netcheck
+curl -L https://github.com/TunLinAung010/NetCheck-Enterprise-Network-Toolkit/releases/latest/download/netcheck-linux-amd64 -o netcheck
 chmod +x netcheck
 sudo mv netcheck /usr/local/bin/
 ```
 
 ### macOS
 ```bash
-curl -L https://github.com/netcheck/netcheck/releases/latest/download/netcheck-darwin-amd64 -o netcheck
+curl -L https://github.com/TunLinAung010/NetCheck-Enterprise-Network-Toolkit/releases/latest/download/netcheck-darwin-amd64 -o netcheck
 chmod +x netcheck
 sudo mv netcheck /usr/local/bin/
 ```
 
 ### Windows
 ```powershell
-Invoke-WebRequest -Uri https://github.com/netcheck/netcheck/releases/latest/download/netcheck-windows-amd64.exe -OutFile netcheck.exe
+Invoke-WebRequest -Uri https://github.com/TunLinAung010/NetCheck-Enterprise-Network-Toolkit/releases/latest/download/netcheck-windows-amd64.exe -OutFile netcheck.exe
 ```
 
 ### Build from Source
 ```bash
-git clone https://github.com/netcheck/netcheck.git
+git clone https://github.com/TunLinAung010/NetCheck-Enterprise-Network-Toolkit.git
 cd netcheck
 go build -o netcheck ./cmd/netcheck
 ```

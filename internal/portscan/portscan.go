@@ -6,9 +6,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/netcheck/netcheck/internal/tcp"
-	"github.com/netcheck/netcheck/internal/udp"
-	"github.com/netcheck/netcheck/pkg/logger"
+	"github.com/TunLinAung010/NetCheck-Enterprise-Network-Toolkit/internal/tcp"
+	"github.com/TunLinAung010/NetCheck-Enterprise-Network-Toolkit/internal/udp"
+	"github.com/TunLinAung010/NetCheck-Enterprise-Network-Toolkit/pkg/logger"
 )
 
 type ScanType string

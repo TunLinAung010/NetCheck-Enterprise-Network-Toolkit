@@ -46,7 +46,7 @@ Each network protocol or feature is encapsulated in its own package under `inter
 ### Getting Started
 
 ```bash
-git clone https://github.com/netcheck/netcheck.git
+git clone https://github.com/TunLinAung010/NetCheck-Enterprise-Network-Toolkit.git
 cd netcheck
 go mod download
 go build -o netcheck ./cmd/netcheck

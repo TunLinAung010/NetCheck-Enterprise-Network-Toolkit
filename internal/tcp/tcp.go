@@ -7,7 +7,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/netcheck/netcheck/pkg/logger"
+	"github.com/TunLinAung010/NetCheck-Enterprise-Network-Toolkit/pkg/logger"
 )
 
 type State string

@@ -1,4 +1,4 @@
-module github.com/netcheck/netcheck
+module github.com/TunLinAung010/NetCheck-Enterprise-Network-Toolkit
 
 go 1.22
 

@@ -7,7 +7,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/netcheck/netcheck/pkg/logger"
+	"github.com/TunLinAung010/NetCheck-Enterprise-Network-Toolkit/pkg/logger"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 )
