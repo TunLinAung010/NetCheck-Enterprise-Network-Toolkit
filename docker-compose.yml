@@ -1,0 +1,38 @@
+version: "3.8"
+
+services:
+  netcheck:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: netcheck
+    network_mode: host
+    cap_add:
+      - NET_RAW
+      - NET_ADMIN
+    ports:
+      - "8080:8080"
+      - "9090:9090"
+    volumes:
+      - ./configs:/etc/netcheck:ro
+    command: ["--web", "--metrics", "--config", "/etc/netcheck/netcheck.yaml"]
+
+  netcheck-prometheus:
+    image: prom/prometheus:latest
+    container_name: netcheck-prometheus
+    volumes:
+      - ./configs/prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9091:9090"
+    depends_on:
+      - netcheck
+
+  netcheck-grafana:
+    image: grafana/grafana:latest
+    container_name: netcheck-grafana
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    depends_on:
+      - netcheck-prometheus

@@ -1,0 +1,14 @@
+# NetCheck Configuration
+log_level: info
+log_json: false
+ping_count: 4
+ping_interval: 1s
+ping_timeout: 5s
+tcp_timeout: 5s
+udp_timeout: 3s
+scan_workers: 100
+watch_interval: 5s
+prometheus: false
+prometheus_port: 9090
+web_enabled: false
+web_port: 8080
